@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 400px;
+        width: 400px;
+        display: flex;
+        background-color: red;
+        text-align: center;
+        line-height: 100px;
+        margin: 0 auto;
+        /* align-items 决定了items在交叉轴的对齐方式 */
+        /* align-items: normal; 子元素高度没有设置的前提下，自动拉伸填充整个container */
+        align-items: center;
+      }
+      .item {
+        width: 100px;
+
+      }
+      .item1 {
+        background-color: white;
+        height: 60px;
+        font-size: 50px;
+      }
+      .item2 {
+        background-color: green;
+        height: 50px;
+      }
+      .item3 {
+        background-color: purple;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="item item1">item1</div>
+      <div class="item item2">item2</div>
+      <div class="item item3">item3</div>
+    </div>
+    <strong>sss</strong>
+  </body>
+</html>
