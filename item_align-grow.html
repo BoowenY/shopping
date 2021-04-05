@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 500px;
+        width: 500px;
+        display: flex;
+        background-color: red;
+        text-align: center;
+        line-height: 100px;
+        /* flex默认方向从主轴方向排布 */
+        /* flex-direction决定了四个方向 */
+        /* flex-direction: row;从左到右 */
+        margin: 0 auto;
+        /* flex-direction: row-reverse;从右到左 */
+        /* flex-direction: column;从上到下 */
+        /* flex-direction: column-reverse;从下到上 */
+      }
+      .item {
+        width: 250px;
+        height: 100px;
+      }
+      .item1 {
+        background-color: white;
+        flex-grow: .2;
+      }
+      .item2 {
+        background-color: green;
+        flex-grow: .2;
+      }
+      .item3 {
+        background-color: purple;
+        flex-grow: .1;
+        /* 如果数值没有大于1，那么就不会吧剩余的空间分配完 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="item item1">item1</div>
+      <div class="item item2">item2</div>
+      <div class="item item3">item3</div>
+    </div>
+    <strong>sss</strong>
+  </body>
+</html>
